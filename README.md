@@ -71,17 +71,7 @@ community-portal/
 ```bash
 cd backend
 npm install
-```
 
-Open `.env` and fill in your values:
-
-```env
-MONGO_URI=mongodb://localhost:27017/community_portal
-JWT_SECRET=replace_with_a_strong_secret
-JWT_EXPIRES_IN=7d
-PORT=5000
-CLIENT_ORIGIN=http://localhost:3000
-```
 
 Start the server:
 
@@ -104,11 +94,6 @@ cd frontend
 npm install
 ```
 
-Create a `.env.local` file (optional — defaults to localhost):
-
-```env
-NEXT_PUBLIC_API_URL=http://localhost:5000/api
-```
 
 Start the dev server:
 
@@ -116,19 +101,7 @@ Start the dev server:
 npm run dev
 ```
 
-The app will be live at `http://localhost:3000`.
 
----
-
-### 3. Seed a Super-Admin (first user)
-
-Use **curl** or **Postman** to create the first super-admin:
-
-```bash
-curl -X POST http://localhost:5000/api/auth/register \
-  -H "Content-Type: application/json" \
-  -d '{"name":"Admin Name","email":"admin@example.com","password":"yourpassword","role":"super-admin"}'
-```
 
 > ⚠️ After seeding, consider adding middleware to disable open registration in production.
 
