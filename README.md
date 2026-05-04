@@ -57,14 +57,7 @@ community-portal/
 
 ---
 
-## 🚀 Getting Started
 
-### Prerequisites
-- **Node.js** ≥ 18
-- **MongoDB** running locally (or a cloud URI like MongoDB Atlas)
-- **npm** or **yarn**
-
----
 
 ### 1. Backend Setup
 
